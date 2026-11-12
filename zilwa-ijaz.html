@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zilwa Ijaz — Bizskoop</title>
+<meta name="description" content="Business &amp; Brand Manager at Bizskoop. Save the contact, or message directly.">
+<meta name="theme-color" content="#091932">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#091932;
+  --blue:#4A7CBF;
+  --paper:#FFFFFF;
+  --mist:#EFF2F7;
+  --slate:#5C6B84;
+  --hair:#DCE3ED;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--navy);color:var(--navy);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  min-height:100dvh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:26px 16px 40px;
+}
+a{color:inherit}
+
+/* ---------- card ---------- */
+.card{
+  position:relative;overflow:hidden;
+  width:100%;max-width:420px;
+  background:var(--paper);border-radius:18px;
+  box-shadow:0 26px 60px -26px rgba(0,0,0,.7);
+  animation:rise .6s cubic-bezier(.22,1,.36,1) both;
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.ring{
+  position:absolute;top:-112px;right:-98px;
+  width:272px;height:272px;border-radius:50%;
+  border:22px solid var(--mist);pointer-events:none;
+}
+.top{position:relative;padding:30px 28px 0}
+.logo{display:block;width:154px;height:auto}
+.tagline{
+  margin-top:11px;font-size:9.5px;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--blue);
+}
+
+.who{position:relative;padding:30px 28px 0}
+.name{
+  font-family:Outfit,Inter,sans-serif;font-weight:600;
+  font-size:clamp(26px,7vw,33px);line-height:1.1;letter-spacing:-.018em;
+}
+.role{margin-top:9px;font-size:13.5px;font-weight:500;color:var(--slate)}
+
+/* ---------- fields ---------- */
+.fields{padding:24px 28px 0}
+.f{
+  display:grid;grid-template-columns:15px 1fr;gap:13px;align-items:start;
+  padding:11px 0;border-top:1px solid var(--hair);
+}
+.f:first-child{border-top:0;padding-top:4px}
+.f .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--blue);
+  margin:8px 0 0 4px;animation:pop .4s cubic-bezier(.3,1.6,.5,1) both;
+}
+.f:nth-child(2) .dot{animation-delay:.24s}
+.f:nth-child(3) .dot{animation-delay:.32s}
+.f:nth-child(4) .dot{animation-delay:.4s}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.f dt{
+  font-size:9px;font-weight:600;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--slate);
+}
+.f dd{margin-top:4px;font-size:15px;font-weight:500;overflow-wrap:anywhere}
+.f dd a{text-decoration:none}
+.f dd a:hover{color:var(--blue)}
+
+/* ---------- actions ---------- */
+.acts{display:grid;gap:9px;padding:24px 28px 26px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  text-decoration:none;padding:15px;
+  font-size:12.5px;font-weight:600;letter-spacing:.03em;
+  border:1.5px solid var(--navy);border-radius:11px;
+  transition:background .16s,color .16s,border-color .16s;
+}
+.btn.solid{background:var(--navy);color:var(--paper)}
+.btn.solid:hover{background:var(--blue);border-color:var(--blue)}
+.btn.line{color:var(--navy)}
+.btn.line:hover{background:var(--mist)}
+.btn svg{width:16px;height:16px;flex:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+
+.foot{
+  border-top:1px solid var(--hair);padding:16px 28px;text-align:center;
+  font-size:10px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--slate);
+}
+
+/* ---------- directory ---------- */
+.dir{width:100%;max-width:560px}
+.dir .logo{width:168px}
+.dir h1{
+  font-family:Outfit,Inter,sans-serif;font-weight:600;color:#fff;
+  font-size:clamp(27px,7.5vw,38px);line-height:1.08;letter-spacing:-.02em;
+  margin-top:34px;
+}
+.dir .sub{
+  margin:10px 0 28px;font-size:10px;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--blue);
+}
+.entry{
+  display:flex;gap:18px;align-items:center;text-decoration:none;color:#fff;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:14px;padding:15px;margin-bottom:11px;
+  transition:background .16s,border-color .16s;
+}
+.entry:hover{background:rgba(255,255,255,.1);border-color:var(--blue)}
+.entry img{
+  width:150px;height:150px;flex:none;background:#fff;
+  padding:8px;border-radius:10px;
+}
+.en{
+  display:block;font-family:Outfit,Inter,sans-serif;font-weight:600;
+  font-size:18px;line-height:1.2;letter-spacing:-.01em;
+}
+.er{
+  display:block;margin-top:7px;font-size:10.5px;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;color:#9DB2D0;line-height:1.7;
+}
+.note{font-size:12px;line-height:1.85;color:#8B9FBC;margin-top:24px}
+.note b{color:#C6D5E8;font-weight:600}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+@media print{
+  body{background:#fff;padding:0}
+  .dir h1{color:var(--navy)}
+  .entry{background:none;border-color:#DCE3ED;color:var(--navy)}
+  .entry img{width:170px;height:170px}
+}
+</style>
+</head><body>
+
+<main class="card">
+  <span class="ring"></span>
+
+  <div class="top">
+    <img class="logo" src="logo.png" alt="Bizskoop">
+    <p class="tagline">Immigration &amp; Business Advisory</p>
+  </div>
+
+  <div class="who">
+    <h1 class="name">Zilwa Ijaz</h1>
+    <p class="role">Business &amp; Brand Manager</p>
+  </div>
+
+  <dl class="fields">
+    <div class="f"><span class="dot"></span>
+      <div><dt>Mobile</dt><dd><a href="tel:+601161496123">+60 11-6149 6123</a></dd></div>
+    </div>
+    <div class="f"><span class="dot"></span>
+      <div><dt>Work</dt><dd><a href="tel:+601124244993">+60 11-2424 4993</a></dd></div>
+    </div>
+    <div class="f"><span class="dot"></span>
+      <div><dt>Email</dt><dd><a href="mailto:partnerships@bizskoop.com">partnerships@bizskoop.com</a></dd></div>
+    </div>
+    <div class="f"><span class="dot"></span>
+      <div><dt>Office</dt><dd>Kuala Lumpur, Malaysia</dd></div>
+    </div>
+  </dl>
+
+  <div class="acts">
+    <a class="btn solid" href="zilwa-ijaz.vcf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg> Save to contacts</a>
+    <div class="row2">
+      <a class="btn line" href="https://wa.me/601161496123"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg> WhatsApp</a>
+      <a class="btn line" href="mailto:partnerships@bizskoop.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg> Email</a>
+    </div>
+  </div>
+
+  <div class="foot">bizskoop.com</div>
+</main>
+</body></html>
